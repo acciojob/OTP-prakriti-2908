@@ -14,13 +14,14 @@
         <div id="verification_subtext">We emailed you the six digit code to acciojob@email.com Enter the code below to confirm your email address.</div>
         
         <div class="code-container"> 
-			<input type="text" class="code" id="code-1" maxlength=1 > 
-            <input type="text" class="code" id="code-2" maxlength=1>
-            <input type="text" class="code" id="code-3" maxlength=1>
-            <input type="text" class="code" id="code-4" maxlength=1>
-            <input type="text" class="code" id="code-5" maxlength=1>
-            <input type="text" class="code" id="code-6" maxlength=1>
-        </div>
+			
+<input type="text" maxlength="1" id="digit1" onkeyup="focusNext(this, 'digit2')">
+<input type="text" maxlength="1" id="digit2" onkeyup="focusNext(this, 'digit3')">
+<input type="text" maxlength="1" id="digit3" onkeyup="focusNext(this, 'digit4')">
+<input type="text" maxlength="1" id="digit4" onkeyup="focusNext(this, 'digit5')">
+<input type="text" maxlength="1" id="digit5" onkeyup="focusNext(this, 'digit6')">
+<input type="text" maxlength="1" id="digit6">
+			</div>
 		</div>
     </div>
     <script type="text/javascript" src="./script.js">
